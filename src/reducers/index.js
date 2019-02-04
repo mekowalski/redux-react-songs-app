@@ -12,3 +12,13 @@ const songsReducer = () => {
     {title: 'Belong To You', duration: '3:07'}
   ]
 }
+
+const selectedSongReducer = (selectedSong=null, action) => {
+  if (action.type ===  'SONG_SELECTED') {
+    return action.payload
+  }
+  return selectedSong
+}
+
+//if statement isn't necessary because there is only one action type
+//but it's good practice

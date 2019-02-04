@@ -40,4 +40,6 @@
 - There will be 3 `index.js` files for actions, src and actions
 
 - [x] Build Action Creators inside `/actions` DIR and export
-- [] Build Reducers inside `/reducers` DIR and export
+- [x] Build Reducers inside `/reducers` DIR and export
+- [] Wire up reducers with `combineReducers` call
+- [] Eventually wire up the Provider
