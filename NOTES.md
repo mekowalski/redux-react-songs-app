@@ -16,3 +16,8 @@
   - App: Song List and Selected Songs
   - Song List: `onSongSelect` and `SongList`
   - Selected Songs: `SongDetail`
+
+- Approach application as React WITH Redux
+  - App Component: `SongList` and `SongDetail`
+  - Reducers: Song list and Selected song Reducers (both are pieces of State)
+  - Action Creators: Select Song (change the State)
