@@ -29,3 +29,11 @@
 1. Using React-Redux, create 2 new components(Provider and Connect)
 2. Both components created by React-Redux, that I will create instances of
 3. Pass some Props into both to configure how they work
+
+## REDUX PROJECT STRUCTURE
+2. How to organize Project Directory
+- All code for React and Redux will still be held inside the `src` DIR
+- `/actions`: Contains all files related to Action Creators
+- `/components`: Contains files related to Components
+- `/reducers`: Contains files related to Reducers
+- `index.js`: Set up BOTH React and Redux sides of the application
