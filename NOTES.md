@@ -40,4 +40,4 @@
 - There will be 3 `index.js` files for actions, src and actions
 
 - [x] Build Action Creators inside `/actions` DIR and export
-- [] Build Reducers inside `/reducers` DIR
+- [] Build Reducers inside `/reducers` DIR and export
