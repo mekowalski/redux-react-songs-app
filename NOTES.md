@@ -39,4 +39,5 @@
 - `index.js`: Set up BOTH React and Redux sides of the application
 - There will be 3 `index.js` files for actions, src and actions
 
-- [] Build Action Creators inside `/actions` DIR and export
+- [x] Build Action Creators inside `/actions` DIR and export
+- [] Build Reducers inside `/reducers` DIR

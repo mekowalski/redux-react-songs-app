@@ -5,7 +5,7 @@
 //If a file isn't specified Webpack will automatically give the index.js file
 
 //Action Creator
-const selectSong = (song) => {
+export const selectSong = (song) => {
   //return an Action
   return {
     type: 'SONG_SELECTED',
