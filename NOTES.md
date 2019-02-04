@@ -37,3 +37,6 @@
 - `/components`: Contains files related to Components
 - `/reducers`: Contains files related to Reducers
 - `index.js`: Set up BOTH React and Redux sides of the application
+- There will be 3 `index.js` files for actions, src and actions
+
+- [] Build Action Creators inside `/actions` DIR
