@@ -21,3 +21,11 @@
   - App Component: `SongList` and `SongDetail`
   - Reducers: Song list and Selected song Reducers (both are pieces of State)
   - Action Creators: Select Song (change the State)
+
+# HOW REACT-REDUX WORKS
+- How to get the State created from the Reducers
+- How to get Action Creator to be called by SongList(consumed)
+
+1. Using React-Redux, create 2 new components(Provider and Connect)
+2. Both components created by React-Redux, that I will create instances of
+3. Pass some Props into both to configure how they work
