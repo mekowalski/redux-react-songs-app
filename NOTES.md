@@ -41,6 +41,12 @@
 
 - [x] Build Action Creators inside `/actions` DIR and export
 - [x] Build Reducers inside `/reducers` DIR and export
-- [] Wire up reducers with `combineReducers` call
+- [x] Wire up reducers with `combineReducers` call
   - import Redux to wire up both reducers to each other with `combineReducers()`
+
+### Redux is pretty much set up and ready to go, here on out it's React and React-Redux
+- Add a bit more configuration to `src/index.js`
+- Goal is to make sure Provider tag is at the very top of the Component hierarchy
+- And make sure it's passed the Redux Store(loads all the reducers)
+- Create Provider instance that wraps the App Component with it
 - [] Eventually wire up the Provider
