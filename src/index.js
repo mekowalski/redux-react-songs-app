@@ -10,7 +10,15 @@ import { createStore } from 'redux';
 import App from './components/App';
 import reducers from './reducers';
 
+//1. wrap Provider around App
+//2. pass in Props to Provider of Store
+//3. store will be the results of calling createStore and passing in the reducers
+//Make use of React-Redux library passes off the store to the Provider and it will take care of everything
+//from there on
+//typical Redux app rarely interacts with Store
 ReactDOM.render(
-  <App />,
+  <Provider store={createStore(reducers)}>
+    <App />
+  <Provider />,
   document.querySelector('#root')
 );
