@@ -30,13 +30,8 @@ class SongList extends React.Component {
   }
 }
 
-//every time the Select button is clicked, this function should rerun and return a new State object
 const mapStateToProps = state => {
-  console.log(state)
   return { songs: state.songs }
 }
 
 export default connect(mapStateToProps, { selectSong })(SongList)
-
-//why go through extra work of passing it to connect() instead of calling it in the renderList()
-//
