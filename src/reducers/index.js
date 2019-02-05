@@ -5,7 +5,7 @@ const songsReducer = () => {
     {title: 'Winning Streak', duration: '3:19'},
     {title: 'Blowback', duration: '4:05'},
     {title: 'Belong To You', duration: '3:07'},
-    {title: 'Idel Worship', duration: '3:18'},
+    {title: 'Idle Worship', duration: '3:18'},
     {title: 'Lost In Japan', duration: '3:54'},
     {title: 'Better', duration: '3:51'}
   ]

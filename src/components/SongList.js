@@ -1,15 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectSong } from '../actions'; //1. import action creator
+import { selectSong } from '../actions';
 
 class SongList extends React.Component {
-  //helper method, take the list of songs, map over the list and return big blob of JSX
   renderList() {
     return this.props.songs.map((song) => {
       return (
         <div className='item' key={song.title}>
           <div className='right floated content'>
-            <button className='ui button primary'>
+            <button
+              className='ui button primary'
+              onClick={() => this.props.selectSong(song)}
+            >
               Select
             </button>
           </div>
@@ -20,8 +22,6 @@ class SongList extends React.Component {
   }
 
   render() {
-    //3. connect() will take take action creator and pass it into the Component as a Prop
-    console.log(this.props)
     return (
       <div className='ui divided list'>
         {this.renderList()}
@@ -30,10 +30,13 @@ class SongList extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+//every time the Select button is clicked, this function should rerun and return a new State object
+const mapStateToProps = state => {
+  console.log(state)
   return { songs: state.songs }
 }
 
-//2. pass it as a 2nd argument to connect()
-//an object with a key and value of the action creator
 export default connect(mapStateToProps, { selectSong })(SongList)
+
+//why go through extra work of passing it to connect() instead of calling it in the renderList()
+//
