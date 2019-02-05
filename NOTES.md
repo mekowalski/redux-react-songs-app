@@ -42,4 +42,5 @@
 - [x] Build Action Creators inside `/actions` DIR and export
 - [x] Build Reducers inside `/reducers` DIR and export
 - [] Wire up reducers with `combineReducers` call
+  - import Redux to wire up both reducers to each other with `combineReducers()`
 - [] Eventually wire up the Provider

@@ -1,7 +1,3 @@
-//write the reducers necessary for application
-//One reducer to return static list of Songs
-//Second reducer to return the selected song
-
 //Reducers
 const songsReducer = () => {
   //static array, no actions, no reason to change
@@ -19,6 +15,3 @@ const selectedSongReducer = (selectedSong=null, action) => {
   }
   return selectedSong
 }
-
-//if statement isn't necessary because there is only one action type
-//but it's good practice
