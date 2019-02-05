@@ -9,4 +9,10 @@ const SongDetail = () => {
   )
 }
 
-export default SongDetail
+//wrap SongDetail with connect() to get info out of Store
+const mapStateToProps = state => {
+  //i care about the selected song which will be the key of selectedSong
+  return { song: state.selectedSong }
+}
+
+export default connect(mapStateToProps)(SongDetail)
