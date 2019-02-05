@@ -6,8 +6,6 @@ class SongList extends React.Component {
   renderList() {
     return this.props.songs.map((song) => {
       return (
-        //there isn't an ID in the song object only a title and duration, use title because that is
-        //sufficiently unique for each rendered song
         <div className='item' key={song.title}>
           <div className='right floated content'>
             <button className='ui button primary'>
@@ -22,7 +20,7 @@ class SongList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='ui divided list'>
         {this.renderList()}
       </div>
     );

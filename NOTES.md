@@ -57,4 +57,6 @@
 - Connect will only be created inside SongList because SongList is the only Component that needs Connect to reach up and get a list of songs
 - [x] Configure Connect call
 
-- [] Render list of songs in the `SongList` Component
+- [x] Render list of songs in the `SongList` Component
+- [] Create styling for song list
+  - grid system semantic ui
