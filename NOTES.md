@@ -55,4 +55,4 @@
 - get list of songs into SongList and console log it
 - Create instance of Connect Component & pass it Provider to ask for the list of songs inside the App
 - Connect will only be created inside SongList because SongList is the only Component that needs Connect to reach up and get a list of songs
-- [] Configure Connect call
+- [x] Configure Connect call
