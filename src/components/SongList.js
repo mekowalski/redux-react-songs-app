@@ -2,8 +2,16 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class SongList extends React.Component {
+  //helper method, take the list of songs, map over the list and return big blob of JSX
+  renderList() {//3. then return that array from renderList method
+    return this.props.songs.map((song) => {//2. map statement produces a brand new array of JSX elements
+      return ( //1. this return, returns some amount of JSX for mapping function
+
+      )
+    })
+  }
+
   render() {
-    // this.props === { songs: state.songs }
     return (
       <div>
         This is the Song List
@@ -13,9 +21,6 @@ class SongList extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  //Want to pull the songs property, SongList only cares about songs
-  //return an object with a KEY of songs: and its value is state.songs
-  //object returned will be the Props inside SongList Component
   return { songs: state.songs }
 }
 
