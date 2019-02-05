@@ -49,4 +49,6 @@
 - Goal is to make sure Provider tag is at the very top of the Component hierarchy
 - And make sure it's passed the Redux Store(loads all the reducers)
 - Create Provider instance that wraps the App Component with it
-- [] Eventually wire up the Provider
+- [x] Eventually wire up the Provider
+
+- [] Create SongList Component
