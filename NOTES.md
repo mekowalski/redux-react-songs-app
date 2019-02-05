@@ -68,3 +68,10 @@
   - Wire the Action Creator to the Connect Component
 
 - [] Build SongDetail Component
+  - Show info on the currently selected song
+  - Use connect()
+  - Needs to know about info in Store
+  - mapStateToProps() to tell Provider when selected song changes
+  - Provider will tell connect() when a user clicks on Select button and when a song changes
+  - connect() will take the currently selected song and pass it as a Prop to SongDetail
+  - SongDetail has not functionality tied to it that will change State, no need to wire up Action Creator
