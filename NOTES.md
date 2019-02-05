@@ -76,6 +76,6 @@
   - connect() will take the currently selected song and pass it as a Prop to SongDetail
   - SongDetail has not functionality tied to it that will change State, no need to wire up Action Creator
 
-- [] Render Song Details
+- [x] Render Song Details
   - customize what is rendered based on the song in the Props object
   - Props object has a key of song, with values present
