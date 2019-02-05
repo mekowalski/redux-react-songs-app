@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { selectSong } from '../actions'; //1. import action creator
 
 class SongList extends React.Component {
   //helper method, take the list of songs, map over the list and return big blob of JSX
@@ -19,6 +20,8 @@ class SongList extends React.Component {
   }
 
   render() {
+    //3. connect() will take take action creator and pass it into the Component as a Prop
+    console.log(this.props)
     return (
       <div className='ui divided list'>
         {this.renderList()}
@@ -31,4 +34,6 @@ const mapStateToProps = (state) => {
   return { songs: state.songs }
 }
 
-export default connect(mapStateToProps)(SongList)
+//2. pass it as a 2nd argument to connect()
+//an object with a key and value of the action creator
+export default connect(mapStateToProps, { selectSong })(SongList)

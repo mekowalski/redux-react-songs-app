@@ -62,4 +62,7 @@
   - grid system semantic ui
 
 - [] Select button functionality
-  - When a song is selected, the Redux Store should be updated
+  - When a song is selected, the Data/State of the Redux Store should be updated
+  - Anytime Data is update with Redux, NEED to call an Action Creator(selectSong)
+  - Action will be determined and calculated inside the Reducer
+  - Wire the Action Creator to the Connect Component
