@@ -1,0 +1,12 @@
+import React from 'react';
+import { connect } from 'react-redux';
+
+const SongDetail = () => {
+  return (
+    <div>
+      Song Detailsssss
+    </div>
+  )
+}
+
+export default SongDetail
