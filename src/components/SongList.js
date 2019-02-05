@@ -3,10 +3,18 @@ import { connect } from 'react-redux';
 
 class SongList extends React.Component {
   //helper method, take the list of songs, map over the list and return big blob of JSX
-  renderList() {//3. then return that array from renderList method
-    return this.props.songs.map((song) => {//2. map statement produces a brand new array of JSX elements
-      return ( //1. this return, returns some amount of JSX for mapping function
-
+  renderList() {
+    return this.props.songs.map((song) => {
+      return (
+        //there isn't an ID in the song object only a title and duration, use title because that is
+        //sufficiently unique for each rendered song
+        <div className='item' key={song.title}>
+          <div className='right floated content'>
+            <button className='ui button primary'>
+              Select
+            </button>
+          </div>
+        </div>
       )
     })
   }
