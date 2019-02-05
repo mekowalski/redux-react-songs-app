@@ -1,19 +1,23 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-//should get Props object that contains the currently selected song
-const SongDetail = props => {
-  console.log(props)
+//destructure the song properties i care about
+const SongDetail = ({ song }) => {
+  //2. fix with conditional
+  if (!song) {
+    return <div>Select a song</div>
+  }
+
   return (
     <div>
-      Song Detailsssss
+      {song.title}
+      //1. returns TypeError: Cannot read property 'title' of null
+      //when Component is first rendered, there isn't a selected song
     </div>
   );
 }
 
-//wrap SongDetail with connect() to get info out of Store
 const mapStateToProps = state => {
-  //i care about the selected song which will be the key of selectedSong
   return { song: state.selectedSong }
 }
 
