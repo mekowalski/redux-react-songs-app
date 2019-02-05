@@ -1,12 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const SongDetail = () => {
+//should get Props object that contains the currently selected song
+const SongDetail = props => {
+  console.log(props)
   return (
     <div>
       Song Detailsssss
     </div>
-  )
+  );
 }
 
 //wrap SongDetail with connect() to get info out of Store
