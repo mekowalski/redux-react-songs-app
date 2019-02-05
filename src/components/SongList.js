@@ -11,14 +11,12 @@ class SongList extends React.Component {
   }
 }
 
-//take State object, all the Data in Store
-//run a calculation on it to show it up as Props inside Component
-//can be named any thing ie: getMyState but convention is this name
-const mapStateToProps = () => {
+//called with all the State inside the Redux Store
+//entire list of songs and selected song
+const mapStateToProps = (state) => {
+  console.log(state)
 
+  return state
 }
 
 export default connect()(SongList)
-//connect syntax
-//connect(): returns a function
-//(SongList): invokes the function
