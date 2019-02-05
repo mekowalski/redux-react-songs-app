@@ -1,13 +1,13 @@
 import React from 'react';
 
 class SongList extends React.Component {
-  render (
+  render() {
     return (
       <div>
         This is the Song List
-      <div/>
-    )
-  )
+      </div>
+    );
+  }
 }
 
 export default SongList
