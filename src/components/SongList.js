@@ -11,12 +11,12 @@ class SongList extends React.Component {
   }
 }
 
-//called with all the State inside the Redux Store
-//entire list of songs and selected song
 const mapStateToProps = (state) => {
   console.log(state)
 
   return state
 }
 
-export default connect()(SongList)
+//after defining mapStateToProps(), pass it into the connect() as the first argument
+//this is how to configure connect() component, configure by passing connect() a function
+export default connect(mapStateToProps)(SongList)
