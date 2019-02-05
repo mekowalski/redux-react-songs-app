@@ -13,13 +13,11 @@ class SongList extends React.Component {
 
 const mapStateToProps = (state) => {
   //Want to pull the songs property, SongList only cares about songs
-  console.log(state)
-
-  return state
+  //return an object with a KEY of songs: and its value is state.songs
+  //object returned will be the Props inside SongList Component
+  return { songs: state.songs }
 }
 
-//after defining mapStateToProps(), pass it into the connect() as the first argument
-//this is how to configure connect() component, configure by passing connect() a function
 export default connect(mapStateToProps)(SongList)
 
 //console
