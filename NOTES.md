@@ -58,5 +58,8 @@
 - [x] Configure Connect call
 
 - [x] Render list of songs in the `SongList` Component
-- [] Create styling for song list
+- [x] Create styling for song list
   - grid system semantic ui
+
+- [] Select button functionality
+  - When a song is selected, the Redux Store should be updated
