@@ -1,3 +1,6 @@
+import { combineReducers } from 'redux';
+//example of named export
+
 //Reducers
 const songsReducer = () => {
   //static array, no actions, no reason to change
@@ -15,3 +18,11 @@ const selectedSongReducer = (selectedSong=null, action) => {
   }
   return selectedSong
 }
+
+//make use of combineReducers()
+//any other file can have access of combine set of reducers
+export default combineReducers({
+  //object keys, keys that show up in State object
+  songs: songsReducer,
+  selectedSong: selectedSongReducer
+})
