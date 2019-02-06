@@ -21,6 +21,9 @@ Kowalski, are you there?
   - How to get Data from Store with connect()
   - Named vs Default exports
   - The purpose of the Provider, referencing the Store
+  - Separation of React and Redux
+  - How React-Redux works
 
 - What this App doesn't do:
-  
+  - There isn't a way to add more songs, the songs are hard-coded
+  - Modifications are not available(edit, add, delete songs, etc)
