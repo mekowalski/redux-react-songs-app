@@ -30,12 +30,15 @@ class SongList extends React.Component {
   }
 }
 
+//configuration passed to connect() for getting a list of songs from Store from the Provider
+//state: songsReducer and selectedSongReducer
 const mapStateToProps = state => {
   return { songs: state.songs }
 }
 
 //connect() will be told what pieces of state is wanted out of the store & action creators should be wired
-//connect( state, action-creators )
+//connect( state/function, action-creators )
 //connect(mapStateToProps, selectSong)
+//mapStateToProps: is the 1st function passed to the connect() in order to be configured
 //(SongList): invokes connect()
 export default connect(mapStateToProps, { selectSong })(SongList)
