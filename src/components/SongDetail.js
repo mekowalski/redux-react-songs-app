@@ -1,5 +1,7 @@
+//React Side
 import React from 'react';
 import { connect } from 'react-redux';
+//connect can work with both class-based and functional components
 
 const SongDetail = ({ song }) => {
   if (!song) {

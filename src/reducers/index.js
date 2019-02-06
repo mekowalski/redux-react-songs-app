@@ -1,6 +1,4 @@
 //Redux Side
-//wire up reducers together
-//combineReducers is a named export from outside libary: redux
 import { combineReducers } from 'redux';
 
 const songsReducer = () => {
@@ -14,8 +12,6 @@ const songsReducer = () => {
   ]
 }
 
-//if statments are used mostly for multiple action types, this app only has one
-//this is default practice though
 const selectedSongReducer = (selectedSong=null, action) => {
   if (action.type ===  'SONG_SELECTED') {
     return action.payload
