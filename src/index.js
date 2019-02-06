@@ -6,6 +6,7 @@ import { createStore } from 'redux';
 import App from './components/App';
 import reducers from './reducers';
 
+//Provider is at the very top of the hierarchy, Store is passed in, having reference to Store
 ReactDOM.render(
   <Provider store={createStore(reducers)}>
     <App />

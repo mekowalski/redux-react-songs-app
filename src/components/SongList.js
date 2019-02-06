@@ -34,4 +34,7 @@ const mapStateToProps = state => {
   return { songs: state.songs }
 }
 
+//connect() will be told what pieces of state is wanted out of the store & action creators should be wired
+//connect( state, action-creators )
+//connect(mapStateToProps, selectSong)
 export default connect(mapStateToProps, { selectSong })(SongList)

@@ -1,3 +1,4 @@
+//Redux Side
 import { combineReducers } from 'redux';
 
 const songsReducer = () => {
