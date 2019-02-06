@@ -12,6 +12,15 @@ Kowalski, are you there?
 - With the connect(), it is necessary to define a `mapStateToProps()`
 - `mapStateToProps` was passed as the first argument to connect() with odd syntax
   - eg: `export default connect(mapStateToProps)(AnotherComponent)`
-
+- This application is pretty simple and basic
+- What was learned:
+  - Project structure of `/actions`, `/components` and `/reducers`
+  - How Action Creators and Actions relate
+  - How the Reducer updates the Data/State of the Store
+  - Use of combineReducers and mapStateToProps
+  - How to get Data from Store with connect()
+  - Named vs Default exports
+  - The purpose of the Provider, referencing the Store
 
 - What this App doesn't do:
+  
